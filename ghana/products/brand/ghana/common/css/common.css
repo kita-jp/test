@@ -1,0 +1,493 @@
+@charset "shift_jis";
+
+body#ghana {
+	background: #cc0001;
+	text-align: center;
+	padding:0;
+	margin: 0px;
+	height: 100%;
+}
+body#ghana #container {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border: none;
+	text-align: center;
+	background-image: none;
+	height: 100%;
+}
+
+/*===================================
+	ヘッダー
+=====================================*/
+body#ghana #container #header {
+	width: 100%;
+	height: 67px;
+	padding: 0px;
+	background-color: #cb0000;
+	margin: 0;
+}
+body#ghana #container #header_wrap {
+	width: 1000px;
+	height: 67px;
+	margin: 0 auto;
+	background: url(../img/bg_header.gif) no-repeat;
+	text-align: left;
+}
+
+#container #header .logo{
+	float: left;
+	background: url(../img/lotte_logo.jpg);
+	background-repeat: no-repeat;
+	width: 101;
+	height: 34px;
+	margin: 17px 0 0;
+	padding: 0px;
+	text-indent: -9999px;
+}
+
+#container #header .logo a{
+	display: block;
+	overflow: hidden;
+	width: 101px;
+	height: 34px;
+	margin: 0px;
+	text-indent: -9999px;
+}
+
+#container #header h1{
+	float: right;
+	width: 870px;
+	margin: 0;
+	padding-top: 40px;
+	color: #fff;
+	text-align: left;
+	font-size: 11pt;
+	font-weight: bold;
+}
+
+#container #header .banner{
+	float: left;
+	width: 323px;
+	height: 57px;
+	margin: -13px 0px 0px 20px;
+}
+
+/* ▼InternetExplorer用▼ */
+/* 6.0// */
+*html body #container #header .banner{
+	float: left;
+	width: 323px;
+	height: 57px;
+	margin: -13px 0px 0px 0px;
+}
+
+/*===================================
+	トップヘッダー
+=====================================*/
+body#ghana #container #header_top {
+	width: 100%;
+	height: 67px;
+	padding: 0px;
+	background-color: #cb0000;
+	text-align: center;
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 17px;
+	margin-left: 0;
+}
+body#ghana #container #header_wrap {
+	width: 1000px;
+	height: 67px;
+	margin: 0 auto;
+	background: url(../img/bg_header.gif) no-repeat;
+	text-align: left;
+}
+
+#container #header_top .logo{
+	float: left;
+	background: url(../img/lotte_logo.jpg);
+	background-repeat: no-repeat;
+	width: 101;
+	height: 34px;
+	margin: 17px 0 0;
+	padding: 0px;
+	text-indent: -9999px;
+}
+
+#container #header_top .logo a{
+	display: block;
+	overflow: hidden;
+	width: 101px;
+	height: 34px;
+	margin: 0px;
+	text-indent: -9999px;
+}
+
+#container #header_top h1{
+	float: right;
+	width: 870px;
+	margin: 0;
+	padding-top: 40px;
+	color: #fff;
+	text-align: left;
+	font-size: 11pt;
+	font-weight: bold;
+}
+
+#container #header_top .banner{
+	float: left;
+	width: 323px;
+	height: 57px;
+	margin: -13px 0px 0px 20px;
+}
+
+/* ▼InternetExplorer用▼ */
+/* 6.0// */
+*html body #container #header_top .banner{
+	float: left;
+	width: 323px;
+	height: 57px;
+	margin: -13px 0px 0px 0px;
+}
+
+/*===================================
+	コンテンツ
+=====================================*/
+body#ghana #container #maincontents{
+	width: 1000px;
+	padding: 0px 0px 0 0px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+
+/* clearfix */
+.clearfix:after {
+  content: ".";  /* 新しい要素を作る */
+  display: block;  /* ブロックレベル要素に */
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+.clearfix {
+  min-height: 1px;
+}
+
+* html .clearfix {
+  height: 1px;
+  /*\*//*/
+  height: auto;
+  overflow: hidden;
+  /**/
+}
+
+body#ghana #container #maincontents .pagetop a {
+	width: 108px;
+	height: 20px;
+	margin: 10px 0 15px 600px;
+	padding: 0;
+	display: block;
+	background-image: url(../img/btn_pagetop.gif);
+	background-repeat: no-repeat;
+	overflow: hidden;
+	text-indent: -9999px;
+}
+
+body#ghana #container #maincontents .pagetop01 a {
+	width: 107px;
+	height: 20px;
+	margin: 10px 0 10px 600px;
+	padding: 0;
+	display: block;
+	background-image: url(../img/btn_pagetop01.gif);
+	background-repeat: no-repeat;
+	overflow: hidden;
+	text-indent: -9999px;
+}
+
+
+/*================ メインコンテンツ ================*/
+
+#container #maincontents #main{
+	width: 790px;
+	line-height: 1.2em;
+	float: left;
+	color: #753F2A;
+	font-size: 10pt;
+}
+
+#container #maincontents #main a{
+	color:#753F2A;
+	text-decoration:none;
+}
+
+#container #maincontents #main a:hover{
+	color:#753F2A;
+}
+
+#container #maincontents #main a:hover img{
+	text-decoration:none;
+}
+
+
+
+/*================ サイドコンテンツ ================*/
+
+#container #maincontents #side {
+	width: 200px;
+	line-height: 1.2em;
+	float: right;
+	background: url(../img/bg_side_01.gif) no-repeat;
+	color: #753F2A;
+	padding-top: 25px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 30px;
+	margin-left: 0;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#container #maincontents #side a {
+	color: #753F2A;
+	text-decoration: none;
+}
+#container #maincontents #side a:hover {
+	color: #753F2A;
+	text-decoration: underline;
+}
+#ghana #container #maincontents #side .side_bg {
+	background-image: url(../img/bg_side_02.gif);
+	background-repeat: repeat-y;
+	margin: 0px;
+	padding: 0px;
+}
+
+#container #maincontents #side #side_menu {
+	background: url(../img/bg_side_03.gif) left bottom no-repeat;
+	padding-top: 0;
+	padding-right: 0px;
+	padding-bottom: 30px;
+	padding-left: 13px;
+	margin: 0px;
+	width: 190px;
+}
+#ghana #container #maincontents #side .side_bg #side_menu .top {
+	width: 190px;
+	margin: 0;
+	padding: 0px;
+}
+#ghana #container #maincontents #side .side_bg #side_menu .navi_banner {
+	margin: 0px;
+	padding-top: 10px;
+	padding-right: 0px;
+	padding-bottom: 15px;
+	padding-left: 0px;
+}
+
+#ghana #container #maincontents #side .side_bg #side_menu .top .icon {
+	float: left;
+	padding: 0px;
+	margin-top: 10px;
+	margin-right: 5px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+#ghana #container #maincontents #side .side_bg #side_menu .top .txt {
+	float: left;
+	margin: 0px;
+	font-size: 14px;
+	padding-top: 15px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+#ghana #container #maincontents #side .side_bg #side_menu .top .txt4 {
+	float: left;
+	margin: 0px;
+	font-size: 13px;
+	padding-top: 15px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+
+#ghana #container #maincontents #side .side_bg #side_menu .top .txt2 {
+	float: left;
+	margin: 0px;
+	font-size: 14px;
+	padding-top: 7px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+#ghana #container #maincontents #side .side_bg #side_menu .top2 .icon {
+	float: left;
+	padding: 0px;
+	margin-top: 3px;
+	margin-right: 5px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+#ghana #container #maincontents #side .side_bg #side_menu .top2 {
+	margin-top: 10px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding: 0px;
+}
+
+#ghana #container #maincontents #side .side_bg #side_menu .top2 img {
+	margin: 0;
+	padding: 0;
+}
+
+#ghana #container #maincontents #side .side_bg #side_menu .top2 .txt3 {
+	font-size: 12px;
+	font-weight: normal;
+	margin: 0px;
+	padding: 0px;
+	float: left;
+}
+#ghana #container #maincontents #side .side_bg #side_menu .top3 .icon {
+	float: left;
+	padding: 0px;
+	margin-top: 10px;
+	margin-right: 5px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+#ghana #container #maincontents #side .side_bg #side_menu .top3 .txt {
+	font-size: 12px;
+	font-weight: normal;
+	margin: 5px 0 0 0;
+	padding: 0px;
+	float: left;
+}
+
+#ghana #container #maincontents #side .side_bg #side_menu .line {
+	width: 173px;
+	padding: 7px 0 0px 0;
+	margin: 0px;
+}
+
+#ghana #container #maincontents #side .side_bg #side_menu .line1 {
+	width: 173px;
+	padding: 7px 0 7px 0;
+	margin: 0px;
+}
+
+
+
+/*===================================
+	フッター
+=====================================*/
+
+body#ghana #container #footer {
+	width: 100%;
+	overflow: hidden;
+	background-image: none;
+	background-color: #cb0000;
+	padding-top: 14px;
+	padding-right: 0;
+	padding-bottom: 13px;
+	padding-left: 0;
+	margin-top: 25px;
+	margin-bottom: 0px;
+    bottom: 0px;
+
+}
+body#ghana #container #footer_wrap {
+	width: 1000px;
+	margin: 0 auto;
+	text-align: left;
+}
+body#ghana #container #footer_wrap ul.footer_left {
+	padding-left: 15px;
+}
+body#ghana #container #footer_wrap ul.footer_left a {
+	padding-right: 10px;
+}
+body#ghana #container #footer_wrap ul.footer_left a.foot_rule {
+	width:57px;
+	height: 12px;
+	background:url(../img/txt_foot_rule.gif) no-repeat;
+	border-right: 1px solid #fff;
+}
+body#ghana #container #footer_wrap ul.footer_left a.foot_policy {
+	width:110px;
+	height: 11px;
+	background:url(../img/txt_foot_policy.gif) no-repeat;
+	border-right: 1px solid #fff;
+}
+body#ghana #container #footer_wrap ul.footer_left a.foot_use {
+	width:48px;
+	height: 12px;
+	background:url(../img/txt_foot_use.gif) no-repeat;
+}
+
+body#ghana #container #footer_wrap div.footer_right {
+	width: 306px;
+	margin-right: 15px;
+	float: right;
+	display: inline;
+}
+body#ghana #container #footer_wrap div.footer_right p.copyright {
+	height: 12px;
+	background:url(../img/txt_foot_copyright.gif) no-repeat;
+	text-align: left;
+	text-indent: -9999px;
+	font-size: 0;
+}
+
+/*===================================
+	右ナビ　チョコめしバナー
+=====================================*/
+
+#side_menu .meshi {
+	width: 173px;
+	height: 75px;
+	padding-top: 5px;
+	padding-right: 0px;
+	padding-bottom: 7px;
+	padding-left: 13px;
+	margin: 0;
+}
+#ghana #container #maincontents #side .side_bg #side_menu .side_navi.bnrFirst .menu_left .bnr_bbs {
+	height: 142px;
+	width: 173px;
+	background-image: url(../img/bnr_bbs.jpg);
+	background-repeat: no-repeat;
+	margin: 0px;
+	padding: 0px;
+}
+#ghana #container #maincontents #side .side_bg #side_menu .side_navi.bnrFirst .menu_left .bnr_bbs h3 {
+	text-indent: -9999px;
+	margin: 0px;
+	padding: 0px;
+}
+#ghana #container #maincontents #side .side_bg #side_menu .side_navi.bnrFirst .menu_left .bnr_bbs h3 a {
+	display: block;
+	height: 86px;
+	width: 173px;
+	margin: 0px;
+	padding: 0px;
+}
+#ghana #container #maincontents #side .side_bg #side_menu .side_navi.bnrFirst .menu_left .bnr_bbs .bnr_bbsbox {
+	margin: 0px;
+	padding: 0px;
+}
+#ghana #container #maincontents #side .side_bg #side_menu .side_navi.bnrFirst .menu_left .bnr_bbs .bnr_bbsbox p {
+	margin: 0px;
+	font-size: 12px;
+	font-weight: bold;
+	padding-top: 9px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 32px;
+}
