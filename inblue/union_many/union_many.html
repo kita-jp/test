@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CreateJS export from union_many</title>
+
+<script src="http://code.createjs.com/easeljs-0.6.0.min.js"></script>
+<script src="http://code.createjs.com/tweenjs-0.4.0.min.js"></script>
+<script src="http://code.createjs.com/movieclip-0.6.0.min.js"></script>
+<script src="http://code.createjs.com/preloadjs-0.3.0.min.js"></script>
+<script src="union_many.js"></script>
+
+<script>
+var canvas, stage, exportRoot;
+
+function init() {
+	canvas = document.getElementById("canvas");
+	images = images||{};
+
+	var manifest = [
+		{src:"images/BG_sp.jpg", id:"BG_sp"},
+		{src:"images/card01.png", id:"card01"},
+		{src:"images/card02.png", id:"card02"},
+		{src:"images/card03.png", id:"card03"},
+		{src:"images/card04.png", id:"card04"},
+		{src:"images/card05.png", id:"card05"},
+		{src:"images/card06.png", id:"card06"},
+		{src:"images/card07.png", id:"card07"},
+		{src:"images/card08.png", id:"card08"},
+		{src:"images/card09.png", id:"card09"},
+		{src:"images/card10.png", id:"card10"},
+		{src:"images/card11.png", id:"card11"},
+		{src:"images/card12.png", id:"card12"},
+		{src:"images/card13.png", id:"card13"},
+		{src:"images/card14.png", id:"card14"},
+		{src:"images/card15.png", id:"card15"},
+		{src:"images/card16.png", id:"card16"},
+		{src:"images/card17.png", id:"card17"},
+		{src:"images/card18.png", id:"card18"},
+		{src:"images/card19.png", id:"card19"},
+		{src:"images/card20.png", id:"card20"},
+		{src:"images/cardA_640x800.png", id:"cardA_640x800"},
+		{src:"images/crosshatch.png", id:"crosshatch"},
+		{src:"images/flash1.png", id:"flash1"},
+		{src:"images/flash10.png", id:"flash10"},
+		{src:"images/flash11.png", id:"flash11"},
+		{src:"images/flash12.png", id:"flash12"},
+		{src:"images/flash13.png", id:"flash13"},
+		{src:"images/flash14.png", id:"flash14"},
+		{src:"images/flash15.png", id:"flash15"},
+		{src:"images/flash16.png", id:"flash16"},
+		{src:"images/flash17.png", id:"flash17"},
+		{src:"images/flash18.png", id:"flash18"},
+		{src:"images/flash19.png", id:"flash19"},
+		{src:"images/flash2.png", id:"flash2"},
+		{src:"images/flash20.png", id:"flash20"},
+		{src:"images/flash21.png", id:"flash21"},
+		{src:"images/flash22.png", id:"flash22"},
+		{src:"images/flash23.png", id:"flash23"},
+		{src:"images/flash24.png", id:"flash24"},
+		{src:"images/flash3.png", id:"flash3"},
+		{src:"images/flash4.png", id:"flash4"},
+		{src:"images/flash5.png", id:"flash5"},
+		{src:"images/flash6.png", id:"flash6"},
+		{src:"images/flash7.png", id:"flash7"},
+		{src:"images/flash8.png", id:"flash8"},
+		{src:"images/flash9.png", id:"flash9"},
+		{src:"images/frame.png", id:"frame"},
+		{src:"images/lv_txt.png", id:"lv_txt"},
+		{src:"images/lvup_bg.png", id:"lvup_bg"},
+		{src:"images/lvup01.png", id:"lvup01"},
+		{src:"images/lvup02.png", id:"lvup02"},
+		{src:"images/lvup03.png", id:"lvup03"},
+		{src:"images/lvup04.png", id:"lvup04"},
+		{src:"images/lvup05.png", id:"lvup05"},
+		{src:"images/lvup06.png", id:"lvup06"},
+		{src:"images/lvup07.png", id:"lvup07"},
+		{src:"images/lvup08.png", id:"lvup08"},
+		{src:"images/lvup09.png", id:"lvup09"},
+		{src:"images/lvup10.png", id:"lvup10"},
+		{src:"images/magic.png", id:"magic"},
+		{src:"images/next.png", id:"next"},
+		{src:"images/skill.png", id:"skill"},
+		{src:"images/soul01.png", id:"soul01"},
+		{src:"images/soul02.png", id:"soul02"},
+		{src:"images/soul03.png", id:"soul03"},
+		{src:"images/soul04.png", id:"soul04"},
+		{src:"images/soul05.png", id:"soul05"},
+		{src:"images/soul06.png", id:"soul06"},
+		{src:"images/soul07.png", id:"soul07"},
+		{src:"images/soul08.png", id:"soul08"},
+		{src:"images/soul09.png", id:"soul09"},
+		{src:"images/soul10.png", id:"soul10"},
+		{src:"images/soul11.png", id:"soul11"},
+		{src:"images/soul12.png", id:"soul12"},
+		{src:"images/soul13.png", id:"soul13"},
+		{src:"images/txt_bg1.png", id:"txt_bg1"},
+		{src:"images/txt_bg2.png", id:"txt_bg2"},
+		{src:"images/txt_bg3.png", id:"txt_bg3"},
+		{src:"images/window.png", id:"window"}
+	];
+
+	var loader = new createjs.LoadQueue(false);
+	loader.addEventListener("fileload", handleFileLoad);
+	loader.addEventListener("complete", handleComplete);
+	loader.loadManifest(manifest);
+}
+
+function handleFileLoad(evt) {
+	if (evt.item.type == "image") { images[evt.item.id] = evt.result; }
+}
+
+function handleComplete() {
+	exportRoot = new lib.union_many();
+
+	stage = new createjs.Stage(canvas);
+	stage.addChild(exportRoot);
+	stage.update();
+	stage.enableMouseOver();
+
+	createjs.Ticker.setFPS(24);
+	createjs.Ticker.addEventListener("tick", stage);
+}
+</script>
+</head>
+
+<body onload="init();" style="background-color:#D4D4D4">
+	<canvas id="canvas" width="640" height="960" style="background-color:#000000"></canvas>
+</body>
+</html>

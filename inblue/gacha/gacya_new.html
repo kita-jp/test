@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CreateJS export from gacya_new</title>
+
+<script src="http://code.createjs.com/easeljs-0.6.0.min.js"></script>
+<script src="http://code.createjs.com/tweenjs-0.4.0.min.js"></script>
+<script src="http://code.createjs.com/movieclip-0.6.0.min.js"></script>
+<script src="http://code.createjs.com/preloadjs-0.3.0.min.js"></script>
+<script src="gacya_new.js"></script>
+
+<script>
+var canvas, stage, exportRoot;
+
+function init() {
+	canvas = document.getElementById("canvas");
+	images = images||{};
+
+	var manifest = [
+		{src:"images/BG.jpg", id:"BG"},
+		{src:"images/BG2.jpg", id:"BG2"},
+		{src:"images/cardA_640x800.png", id:"cardA_640x800"},
+		{src:"images/cardB_640x800.png", id:"cardB_640x800"},
+		{src:"images/cardC_640x800.png", id:"cardC_640x800"},
+		{src:"images/crosshatch.png", id:"crosshatch"},
+		{src:"images/effect1.png", id:"effect1"},
+		{src:"images/effect2.png", id:"effect2"},
+		{src:"images/effect3.png", id:"effect3"},
+		{src:"images/effect4.png", id:"effect4"},
+		{src:"images/effect5.png", id:"effect5"},
+		{src:"images/effect6.png", id:"effect6"},
+		{src:"images/effect7.png", id:"effect7"},
+		{src:"images/effect8.png", id:"effect8"},
+		{src:"images/effect9.png", id:"effect9"},
+		{src:"images/effectflash.png", id:"effectflash"},
+		{src:"images/ｌgr.png", id:"ｌgr"},
+		{src:"images/name_bg.png", id:"name_bg"},
+		{src:"images/next.png", id:"next"},
+		{src:"images/sr.png", id:"sr"},
+		{src:"images/status_bg.png", id:"status_bg"},
+		{src:"images/text01.png", id:"text01"},
+		{src:"images/ur.png", id:"ur"}
+	];
+
+	var loader = new createjs.LoadQueue(false);
+	loader.addEventListener("fileload", handleFileLoad);
+	loader.addEventListener("complete", handleComplete);
+	loader.loadManifest(manifest);
+}
+
+function handleFileLoad(evt) {
+	if (evt.item.type == "image") { images[evt.item.id] = evt.result; }
+}
+
+function handleComplete() {
+	exportRoot = new lib.gacya_new();
+
+	stage = new createjs.Stage(canvas);
+	stage.addChild(exportRoot);
+	stage.update();
+	stage.enableMouseOver();
+
+	createjs.Ticker.setFPS(24);
+	createjs.Ticker.addEventListener("tick", stage);
+}
+</script>
+</head>
+
+<body onload="init();" style="background-color:#D4D4D4">
+	<canvas id="canvas" width="640" height="960" style="background-color:#000000"></canvas>
+</body>
+</html>

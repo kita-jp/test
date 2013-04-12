@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CreateJS export from quest_sp</title>
+
+<script src="http://code.createjs.com/easeljs-0.5.0.min.js"></script>
+<script src="http://code.createjs.com/tweenjs-0.3.0.min.js"></script>
+<script src="http://code.createjs.com/movieclip-0.5.0.min.js"></script>
+<script src="http://code.createjs.com/preloadjs-0.2.0.min.js"></script>
+<script src="quest_sp.js"></script>
+
+<script>
+var canvas, stage, exportRoot;
+
+function init() {
+	canvas = document.getElementById("canvas");
+	images = images||{};
+
+	var manifest = [
+		{src:"images/box_flash01.png", id:"box_flash01"},
+		{src:"images/box_flash02.png", id:"box_flash02"},
+		{src:"images/box_flash03.png", id:"box_flash03"},
+		{src:"images/box_flash04.png", id:"box_flash04"},
+		{src:"images/box_flash05.png", id:"box_flash05"},
+		{src:"images/box_flash06.png", id:"box_flash06"},
+		{src:"images/box_flash07.png", id:"box_flash07"},
+		{src:"images/box_flash08.png", id:"box_flash08"},
+		{src:"images/box_flash09.png", id:"box_flash09"},
+		{src:"images/box1.png", id:"box1"},
+		{src:"images/box2.png", id:"box2"},
+		{src:"images/btn.png", id:"btn"},
+		{src:"images/btn2.png", id:"btn2"},
+		{src:"images/clear01.png", id:"clear01"},
+		{src:"images/clear02.png", id:"clear02"},
+		{src:"images/clear03.png", id:"clear03"},
+		{src:"images/clear04.png", id:"clear04"},
+		{src:"images/clear05.png", id:"clear05"},
+		{src:"images/clear06.png", id:"clear06"},
+		{src:"images/clear07.png", id:"clear07"},
+		{src:"images/clear08.png", id:"clear08"},
+		{src:"images/clear09.png", id:"clear09"},
+		{src:"images/clear10.png", id:"clear10"},
+		{src:"images/clear11.png", id:"clear11"},
+		{src:"images/clear12.png", id:"clear12"},
+		{src:"images/clear13.png", id:"clear13"},
+		{src:"images/clear14.png", id:"clear14"},
+		{src:"images/clear15.png", id:"clear15"},
+		{src:"images/clear16.png", id:"clear16"},
+		{src:"images/clear17.png", id:"clear17"},
+		{src:"images/clear18.png", id:"clear18"},
+		{src:"images/clear19.png", id:"clear19"},
+		{src:"images/clear20.png", id:"clear20"},
+		{src:"images/clear21.png", id:"clear21"},
+		{src:"images/clear22.png", id:"clear22"},
+		{src:"images/coin03.png", id:"coin03"},
+		{src:"images/coin04.png", id:"coin04"},
+		{src:"images/coin05.png", id:"coin05"},
+		{src:"images/coin06.png", id:"coin06"},
+		{src:"images/coin07.png", id:"coin07"},
+		{src:"images/coin08.png", id:"coin08"},
+		{src:"images/coin09.png", id:"coin09"},
+		{src:"images/coin10.png", id:"coin10"},
+		{src:"images/coin11.png", id:"coin11"},
+		{src:"images/coin12.png", id:"coin12"},
+		{src:"images/coin13.png", id:"coin13"},
+		{src:"images/dammy_bg_800x680.jpg", id:"dammy_bg_800x680"},
+		{src:"images/dammy_card_280.jpg", id:"dammy_card_280"},
+		{src:"images/dammy_item_280.jpg", id:"dammy_item_280"},
+		{src:"images/dammy_raid_480.png", id:"dammy_raid_480"},
+		{src:"images/Enagy.png", id:"Enagy"},
+		{src:"images/error.png", id:"error"},
+		{src:"images/flash01.png", id:"flash01"},
+		{src:"images/flash02.png", id:"flash02"},
+		{src:"images/flash03.png", id:"flash03"},
+		{src:"images/flash04.png", id:"flash04"},
+		{src:"images/flash05.png", id:"flash05"},
+		{src:"images/flash06.png", id:"flash06"},
+		{src:"images/flash07.png", id:"flash07"},
+		{src:"images/flash08.png", id:"flash08"},
+		{src:"images/flash09.png", id:"flash09"},
+		{src:"images/lvup01.png", id:"lvup01"},
+		{src:"images/lvup02.png", id:"lvup02"},
+		{src:"images/lvup03.png", id:"lvup03"},
+		{src:"images/lvup04.png", id:"lvup04"},
+		{src:"images/lvup05.png", id:"lvup05"},
+		{src:"images/lvup06.png", id:"lvup06"},
+		{src:"images/lvup07.png", id:"lvup07"},
+		{src:"images/lvup08.png", id:"lvup08"},
+		{src:"images/lvup09.png", id:"lvup09"},
+		{src:"images/lvup10.png", id:"lvup10"},
+		{src:"images/lvup11.png", id:"lvup11"},
+		{src:"images/monstar_l.png", id:"monstar_l"},
+		{src:"images/monstar_m.png", id:"monstar_m"},
+		{src:"images/monstar_s.png", id:"monstar_s"},
+		{src:"images/raid_frame.png", id:"raid_frame"},
+		{src:"images/raid_Gas.png", id:"raid_Gas"},
+		{src:"images/raid_text.png", id:"raid_text"},
+		{src:"images/soul01.png", id:"soul01"},
+		{src:"images/soul02.png", id:"soul02"},
+		{src:"images/soul03.png", id:"soul03"},
+		{src:"images/soul04.png", id:"soul04"},
+		{src:"images/soul05.png", id:"soul05"},
+		{src:"images/soul06.png", id:"soul06"},
+		{src:"images/soul07.png", id:"soul07"},
+		{src:"images/txt_BG.png", id:"txt_BG"},
+		{src:"images/ui.png", id:"ui"}
+	];
+
+	var loader = new createjs.PreloadJS(false);
+	loader.onFileLoad = handleFileLoad;
+	loader.onComplete = handleComplete;
+	loader.loadManifest(manifest);
+}
+
+function handleFileLoad(o) {
+	if (o.type == "image") { images[o.id] = o.result; }
+}
+
+function handleComplete() {
+	exportRoot = new lib.quest_sp();
+
+	stage = new createjs.Stage(canvas);
+	stage.addChild(exportRoot);
+	stage.update();
+
+	createjs.Ticker.setFPS(19);
+	createjs.Ticker.addListener(stage);
+}
+</script>
+</head>
+
+<body onload="init();" style="background-color:#D4D4D4">
+	<canvas id="canvas" width="640" height="960" style="background-color:#000000"></canvas>
+</body>
+</html>
