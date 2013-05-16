@@ -20,9 +20,21 @@ $(function(){
     $('.btns').click(function(){
         $('.modal').show();
     });
-    $('.close, .modalBK').click(function(){
+    $('.close, .modalBK, .back_btn').click(function(){
         $('.modal').hide();
     });
+});
+
+/* =========================================================
+ .modalBK
+========================================================= */
+
+$(function(){
+	wrapperHeight = $("#wrapper").height();
+	contentsHeight = $("#contents").height();
+	
+	modalHeight = wrapperHeight + contentsHeight;
+	$(".modalBK").css("height",modalHeight);
 });
 
 /* =========================================================
