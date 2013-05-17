@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+<meta name="format-detection" content="telephone=no" />
+<title>マイレストラン</title>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/myrestaurant.css">
+<link rel="stylesheet" href="css/gss.css">
+<link rel="stylesheet" href="css/badger.css">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="js/badger.js"></script>
+<script type="text/javascript" src="js/myrestaurant.js"></script>
+</head>
+
+<body>
+
+<div id="wrapper">
+	<div id="container">
+    	<!-- ▼ mainImage ▼ -->
+    	<div class="p_r">
+        	<div class="mb_02"><img src="images/main.jpg" width="320" height="200" /></div>
+        	<div class="tmt btns" date-tgt="wd1"></div><!-- tmt02 == 新着文字非表示 -->
+            
+            <!-- ▼ モーダルウィンドウ ▼ -->
+            <div class="modal wd1">
+                <div class="modalBody">
+                    <!--<p class="close">×close</p>-->
+                    <a href="#" class="ta_c mb10"><img src="images/banner_sample.png" width="280" height="70" /></a>
+                    <ul class="tab_tn">
+                        <li id="all"><a href="#tab1" class="tab1 selected">すべて</a></li>
+                        <li id="new_info"><a href="#tab2" class="tab2">新着情報</a></li>
+                        <li id="notice"><a href="#tab3" class="tab3">お知らせ</a></li>
+                    </ul>
+                                    
+                    <div class="frame_m">
+                    
+                        <ul class="panel">
+                            <li id="tab1">
+                                <a href="#" class="inner_m"><div class="arrow_r02"></div><div class="icon_com"></div><div class="m_num">1</div><span>プレゼントがあります</span></a>
+                                <a href="#" class="inner_m"><div class="arrow_r02"></div><div class="icon_com"></div><div class="m_num">12</div><span>プレゼントがあります</span></a>
+                                <a href="#" class="inner_m"><div class="arrow_r02"></div><div class="icon_star"></div><span>3/23 接客不具合について</span></a>
+                                <a href="#" class="inner_m"><div class="arrow_r02"></div><div class="icon_star"></div><span>3/23 接客不具合について</span></a>
+                                <a href="#" class="inner_m"><div class="arrow_r02"></div><div class="icon_star"></div><span>3/23 接客不具合について</span></a>
+                                <a href="#" class="inner_m ta_r"><div class="arrow_r02"></div><span class="next">もっと見る</span></a>
+                            </li>
+                        </ul>
+                            
+                        <ul class="panel">
+                            <li id="tab2">
+                                <a href="#" class="inner_m"><div class="arrow_r02"></div><div class="icon_com"></div><div class="m_num">2</div><span>プレゼントがあります</span></a>
+                                <a href="#" class="inner_m"><div class="arrow_r02"></div><div class="icon_com"></div><div class="m_num">24</div><span>プレゼントがあります</span></a>
+                                <a href="#" class="inner_m ta_r"><div class="arrow_r02"></div><span class="next">もっと見る</span></a>
+                            </li>
+                        </ul>
+                        
+                        <ul class="panel">
+                            <li id="tab3">
+                                <a href="#" class="inner_m"><div class="arrow_r02"></div><div class="icon_star"></div><span>3/23 接客不具合について</span></a>
+                                <a href="#" class="inner_m"><div class="arrow_r02"></div><div class="icon_star"></div><span>3/23 接客不具合について</span></a>
+                                <a href="#" class="inner_m"><div class="arrow_r02"></div><div class="icon_star"></div><span>3/23 接客不具合について</span></a>
+                                <a href="#" class="inner_m ta_r"><div class="arrow_r02"></div><span class="next">もっと見る</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="back_btn"></div>
+                </div>
+                <div class="modalBK"></div>
+            </div>
+            <!-- ▲ モーダルウィンドウ ▲ -->
+        </div>
+        
+        <!-- ▼ mainBtn ▼ -->
+        <div id="mr_btn" class="ta_c">
+        	<div><img src="images/ui/separator_header.gif" width="320" height="15" /></div>
+            <div class="btn02">
+                <a href="#"><img src="images/btn/button_kitchen_sp.png" width="152" height="78" /></a>
+                <a href="#"><img src="images/btn/button_floor_sp.png" width="152" height="78" /></a>
+                <div class="cook_num">
+                	<ul>
+                        <li class="num0"></li>
+                        <li class="slash"></li>
+                        <li class="num4"></li>
+                    </ul>
+                </div>
+                <div class="service_num">
+                	<ul>
+                        <li class="num3"></li>
+                        <li class="slash"></li>
+                        <li class="num4"></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="btn_03">
+                <a href="#" class="help"><img src="images/btn/button_friend_sp.png" width="100" height="58" /></a>
+                <a href="#" class="gacha"><img src="images/btn/button_gacha_sp.png" width="100" height="58" /></a>
+                <a href="#"><img src="images/btn/button_event_sp.png" width="100" height="58" /></a>
+            </div>
+            <div class="mb_02"><img src="images/ui/separator_footer.gif" width="320" height="15" /></div>
+		</div>
+        
+        <!-- ▼ bg_orange ▼ -->
+        <div id="contents">
+        	<!-- ▼ status ▼ -->
+            <div class="frame">
+                <div class="inner">
+                    <table id="tb_status">
+                    	<tr>
+                        	<td>レベル</td><td><span>99</span></td>
+                        </tr>
+                        <tr>
+                        	<td>体力</td><td><span>999</span>/<span>999</span></td>
+                        </tr>
+                        <tr>
+                        	<td>ペコ</td><td><span>9999999999999999</span></td>
+                        </tr>
+                        <tr>
+                        	<td>ノート</td><td><span>12345</span></td>
+                        </tr>
+                        <tr>
+                        	<td>ガチャPt</td><td><span>12345</span></td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <a href="#" class="inner_n ta_r"><div class="arrow_r02"></div><span class="pr20">もっと見る</span></a>
+            </div>
+            
+            <!-- ▼ message_board ▼ -->
+            <div class="frame">
+            	<div class="f_tit">
+                	<div>伝言板</div>
+                </div>
+                
+                <a href="#" class="inner clearfix">
+                	<div class="arrow_r">
+                        <div class="user f_l"><img src="images/char01.gif" width="60" height="60" style="border-radius:8px;-webkit-border-radius: 8px;-moz-border-radius: 8px;" /></div>
+                        <div class="bl_tri"></div>
+                        <div class="ml70">
+                            <div>くまもん</div>
+                            <div>12:34</div>
+                        </div>
+                        
+                        <div class="balloon">テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト</div>
+                	</div>
+                </a>
+                
+                <a href="#" class="inner clearfix">
+                	<div class="arrow_r">
+                        <div class="user f_l"><img src="images/char02.gif" width="60" height="60" /></div>
+                        <div class="bl_tri"></div>
+                        <div class="ml70">
+                            <div>くまもん</div>
+                            <div>12:34</div>
+                        </div>
+                        
+                        <div class="balloon">テキスト テキスト テキスト テキスト テキスト テキスト テキスト</div>
+                	</div>
+                </a>
+                
+                <a href="#" class="inner_n ta_r"><div class="arrow_r02"></div><span class="pr20">もっと見る</span></a>
+            </div>
+            
+            <!-- ▼ Activities_friend ▼ -->
+            <div class="frame">
+            	<div class="f_tit">
+                	<div>仲間の活動状況</div>
+                </div>
+                
+                <a href="#" class="inner clearfix">
+                	<div class="arrow_r">
+                        <div class="user f_l"><img src="images/char01.gif" width="60" height="60" /></div>
+                        <div class="bl_tri"></div>
+                        <div class="ml70">
+                            <div>くまもん</div>
+                            <div>12:34</div>
+                        </div>
+                        
+                        <div class="balloon">テキスト テキスト テキスト</div>
+                    </div>
+                </a>
+                
+                <a href="#" class="inner clearfix">
+                	<div class="arrow_r">
+                        <div class="user f_l"><img src="images/char02.gif" width="60" height="60" /></div>
+                        <div class="bl_tri"></div>
+                        <div class="ml70">
+                            <div>くまもん</div>
+                            <div>12:34</div>
+                        </div>
+                        
+                        <div class="balloon">テキスト テキスト テキスト テキスト テキスト テキスト</div>
+                    </div>
+                </a>
+                
+                <a href="#" class="inner clearfix">
+                	<div class="arrow_r">
+                        <div class="user f_l"><img src="images/char01.gif" width="60" height="60" /></div>
+                        <div class="bl_tri"></div>
+                        <div class="ml70">
+                            <div>くまもん</div>
+                            <div>12:34</div>
+                        </div>
+                        
+                        <div class="balloon">テキスト テキスト テキスト<p class="txt_red">いちごのカプレーゼ</p></div>
+                	</div>
+                </a>
+                
+                <a href="#" class="inner_n ta_r"><div class="arrow_r02"></div><span class="pr20">もっと見る</span></a>
+            </div>
+            
+            <!-- ▼ menu ▼ -->
+            <div id="menu">メニュー</div>
+            <div id="menu_area">
+            	<table>
+                	<tr>
+                    	<td><a href="#"><img src="images/menu/menu_gacha.gif" width="67" height="67" /></a></td>
+                        <td><a href="#"><img src="images/menu/menu_recipe.gif" width="67" height="67" /></a></td>
+                        <td><a href="#"><img src="images/menu/menu_friend.gif" width="67" height="67" /></a></td>
+                        <td><a href="#"><img src="images/menu/menu_suteki.gif" width="67" height="67" /></a></td>
+                    </tr>
+                    <tr>
+                    	<td><a href="#"><img src="images/menu/menu_deco.gif" width="67" height="67" /></a></td>
+                        <td><a href="#"><img src="images/menu/menu_shop.gif" width="67" height="67" /></a></td>
+                        <td><a href="#"><img src="images/menu/menu_item.gif" width="67" height="67" /></a></td>
+                        <td><a href="#"><img src="images/menu/menu_school.gif" width="67" height="67" /></a></td>
+                    </tr>
+                    <tr>
+                    	<td><a href="#"><img src="images/menu/menu_quest.gif" width="67" height="67" /></a></td>
+                        <td><a href="#"><img src="images/menu/menu_search.gif" width="67" height="67" /></a></td>
+                        <td><a href="#"><img src="images/menu/menu_history.gif" width="67" height="67" /></a></td>
+                        <td><a href="#"><img src="images/menu/menu_top.gif" width="67" height="67" /></a></td>
+                    </tr>
+                    <tr>
+                    	<td><a href="#"><img src="images/menu/menu_profile.gif" width="67" height="67" /></a></td>
+                        <td><a href="#"><img src="images/menu/menu_community.gif" width="67" height="67" /></a></td>
+                        <td><a href="#"><img src="images/menu/menu_set.gif" width="67" height="67" /></a></td>
+                        <td><a href="#"><img src="images/menu/menu_help.gif" width="67" height="67" /></a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
