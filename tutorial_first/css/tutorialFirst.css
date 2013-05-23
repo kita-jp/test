@@ -1,0 +1,460 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* =========================================================
+ tutorialFirst
+========================================================= */
+#preloadedImages {
+       width: 0px;
+       height: 0px;
+       display: inline;
+       background-image:url(../images/btn/btn_hm.png);
+	   background-image:url(../images/btn/btn_hm2.png);
+	   background-image:url(../images/btn/btn_kti.png);
+	   background-image:url(../images/btn/btn_nr.png);
+	   background-image:url(../images/btn/btn_reStart.png);
+	   background-image:url(../images/btn/btn_start.png);
+	   background-image:url(../images/btn/btn_wkt.png);
+	   background-image:url(../images/btn/btn_yr.png);
+	   
+	   background-image:url(../images/main_bg/bg01.jpg);
+	   background-image:url(../images/main_bg/bg02.jpg);
+	   background-image:url(../images/main_bg/bg03.jpg);
+	   background-image:url(../images/main_bg/bg04.jpg);
+	   background-image:url(../images/main_bg/bg05.jpg);
+	   background-image:url(../images/main_bg/bg06.png);
+	   background-image:url(../images/main_bg/bg07.jpg);
+	   background-image:url(../images/main_bg/bg08.jpg);
+	   background-image:url(../images/main_bg/bg09.jpg);
+	   background-image:url(../images/main_bg/bg10.jpg);
+	   background-image:url(../images/main_bg/bg11.jpg);
+	   
+	   background-image:url(../images/se07/face/btn_face01.png);
+	   background-image:url(../images/se07/face/btn_face02.png);
+	   background-image:url(../images/se07/face/btn_face03.png);
+	   background-image:url(../images/se07/face/btn_face04.png);
+	   background-image:url(../images/se07/face/btn_face05.png);
+	   background-image:url(../images/se07/face/btn_face06.png);
+	   background-image:url(../images/se07/face/btn_face07.png);
+	   background-image:url(../images/se07/face/btn_face08.png);
+	   background-image:url(../images/se07/face/btn_face01_s.png);
+	   background-image:url(../images/se07/face/btn_face02_s.png);
+	   background-image:url(../images/se07/face/btn_face03_s.png);
+	   background-image:url(../images/se07/face/btn_face04_s.png);
+	   background-image:url(../images/se07/face/btn_face05_s.png);
+	   background-image:url(../images/se07/face/btn_face06_s.png);
+	   background-image:url(../images/se07/face/btn_face07_s.png);
+	   background-image:url(../images/se07/face/btn_face08_s.png);
+	   background-image:url(../images/se07/main/face01.png);
+	   background-image:url(../images/se07/main/face02.png);
+	   background-image:url(../images/se07/main/face03.png);
+	   background-image:url(../images/se07/main/face04.png);
+	   background-image:url(../images/se07/main/face05.png);
+	   background-image:url(../images/se07/main/face06.png);
+	   background-image:url(../images/se07/main/face07.png);
+	   background-image:url(../images/se07/main/face08.png);
+	   
+	   background-image:url(../images/se08/costume/btn_cos01.png);
+	   background-image:url(../images/se08/costume/btn_cos02.png);
+	   background-image:url(../images/se08/costume/btn_cos03.png);
+	   background-image:url(../images/se08/costume/btn_cos04.png);
+	   background-image:url(../images/se08/costume/btn_cos01_s.png);
+	   background-image:url(../images/se08/costume/btn_cos02_s.png);
+	   background-image:url(../images/se08/costume/btn_cos03_s.png);
+	   background-image:url(../images/se08/costume/btn_cos04_s.png);
+	   background-image:url(../images/se08/main/f1c1.png);
+	   background-image:url(../images/se08/main/f1c2.png);
+	   background-image:url(../images/se08/main/f1c3.png);
+	   background-image:url(../images/se08/main/f1c4.png);
+	   background-image:url(../images/se08/main/f2c1.png);
+	   background-image:url(../images/se08/main/f2c2.png);
+	   background-image:url(../images/se08/main/f2c3.png);
+	   background-image:url(../images/se08/main/f2c4.png);
+	   background-image:url(../images/se08/main/f3c1.png);
+	   background-image:url(../images/se08/main/f3c2.png);
+	   background-image:url(../images/se08/main/f3c3.png);
+	   background-image:url(../images/se08/main/f3c4.png);
+	   background-image:url(../images/se08/main/f4c1.png);
+	   background-image:url(../images/se08/main/f4c2.png);
+	   background-image:url(../images/se08/main/f4c3.png);
+	   background-image:url(../images/se08/main/f4c4.png);
+	   
+	   background-image:url(../images/se09/decor/btn_decor01.png);
+	   background-image:url(../images/se09/decor/btn_decor02.png);
+	   background-image:url(../images/se09/decor/btn_decor03.png);
+	   background-image:url(../images/se09/decor/btn_decor04.png);
+	   background-image:url(../images/se09/decor/btn_decor01_s.png);
+	   background-image:url(../images/se09/decor/btn_decor02_s.png);
+	   background-image:url(../images/se09/decor/btn_decor03_s.png);
+	   background-image:url(../images/se09/decor/btn_decor04_s.png);
+	   background-image:url(../images/se09/main/d1.png);
+	   background-image:url(../images/se09/main/d2.png);
+	   background-image:url(../images/se09/main/d3.png);
+	   background-image:url(../images/se09/main/d4.png);
+	   
+	   background-image:url(../images/se10/interior/btn_int01.png);
+	   background-image:url(../images/se10/interior/btn_int02.png);
+	   background-image:url(../images/se10/interior/btn_int03.png);
+	   background-image:url(../images/se10/interior/btn_int04.png);
+	   background-image:url(../images/se10/interior/btn_int01_s.png);
+	   background-image:url(../images/se10/interior/btn_int02_s.png);
+	   background-image:url(../images/se10/interior/btn_int03_s.png);
+	   background-image:url(../images/se10/interior/btn_int04_s.png);
+	   background-image:url(../images/se10/main/d1i1.png);
+	   background-image:url(../images/se10/main/d1i2.png);
+	   background-image:url(../images/se10/main/d1i3.png);
+	   background-image:url(../images/se10/main/d1i4.png);
+	   background-image:url(../images/se10/main/d2i1.png);
+	   background-image:url(../images/se10/main/d2i2.png);
+	   background-image:url(../images/se10/main/d2i3.png);
+	   background-image:url(../images/se10/main/d2i4.png);
+	   background-image:url(../images/se10/main/d3i1.png);
+	   background-image:url(../images/se10/main/d3i2.png);
+	   background-image:url(../images/se10/main/d3i3.png);
+	   background-image:url(../images/se10/main/d3i4.png);
+	   background-image:url(../images/se10/main/d4i1.png);
+	   background-image:url(../images/se10/main/d4i2.png);
+	   background-image:url(../images/se10/main/d4i3.png);
+	   background-image:url(../images/se10/main/d4i4.png);
+	   
+}
+
+body	{
+	background:url(../images/common/bg_grid.gif);
+	background-size:36px 36px;
+	color:#6B2A25;
+	font-size:0.8em;
+	font-family: 'Helvetica Neue', Helvetica, Arial, Roboto, 'Droid Sans', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic ProN', sans-serif;
+	-webkit-tap-highlight-color:transparent;
+}
+
+#wrapper	{
+	margin: auto;
+	width: 100%;
+	padding: 0;
+}
+
+#container	{
+	displey:block;
+	width:320px;
+	margin:0 auto;
+	position:relative;
+}
+
+/* main
+--------------------------------------------------------- */
+#bg01	{
+	background:url(../images/main_bg/bg01.jpg) no-repeat;
+	background-size:320px 480px;
+	width:320px;
+	height:480px;
+}
+
+#bg02	{
+	background:url(../images/main_bg/bg02.jpg) no-repeat;
+	background-size:320px 480px;
+	width:320px;
+	height:480px;
+}
+
+#bg03	{
+	background:url(../images/main_bg/bg03.jpg) no-repeat;
+	background-size:320px 480px;
+	width:320px;
+	height:480px;
+}
+
+#bg04	{
+	background:url(../images/main_bg/bg04.jpg) no-repeat;
+	background-size:320px 480px;
+	width:320px;
+	height:480px;
+}
+
+#bg05	{
+	background:url(../images/main_bg/bg05.jpg) no-repeat;
+	background-size:320px 480px;
+	width:320px;
+	height:480px;
+}
+
+#bg06	{
+	background:url(../images/main_bg/bg06.png) no-repeat;
+	background-size:320px 480px;
+	width:320px;
+	height:480px;
+}
+
+#bg07	{
+	background:url(../images/main_bg/bg07.jpg) no-repeat;
+	background-size:320px 480px;
+	width:320px;
+	height:480px;
+}
+
+#bg08	{
+	background:url(../images/main_bg/bg08.jpg) no-repeat;
+	background-size:320px 480px;
+	width:320px;
+	height:480px;
+}
+
+#bg09	{
+	background:url(../images/main_bg/bg09.jpg) no-repeat;
+	background-size:320px 480px;
+	width:320px;
+	height:480px;
+}
+
+#bg10	{
+	background:url(../images/main_bg/bg10.jpg) no-repeat;
+	background-size:320px 480px;
+	width:320px;
+	height:480px;
+}
+
+#bg11	{
+	background:url(../images/main_bg/bg11.jpg) no-repeat;
+	background-size:320px 480px;
+	width:320px;
+	height:480px;
+}
+
+/* btn
+--------------------------------------------------------- */
+#btn_start	{
+	background:url(../images/btn/btn_start.png) no-repeat;
+	background-size:125px 31px;
+	width:125px;
+	height:31px;
+	position:absolute;
+	left:97.5px;
+	top:340px;
+}
+
+#btn_hm, #btn_hm2, #btn_kti01, #btn_kti02, #btn_kti03, #btn_kti04, #btn_kti05 , #btn_nr, #btn_wkt, #btn_yr, #btn_restart	{
+	width:150px;
+	height:50px;
+	position:absolute;
+	left:85px;
+	top:340px;
+}
+
+#btn_hm	{ background:url(../images/btn/btn_hm.png) no-repeat; background-size:125px 31px; }
+#btn_hm2{ background:url(../images/btn/btn_hm2.png) no-repeat; background-size:125px 31px; }
+#btn_kti01{ background:url(../images/btn/btn_kti.png) no-repeat; background-size:150px 50px; }
+#btn_kti02{ background:url(../images/btn/btn_kti.png) no-repeat; background-size:150px 50px; }
+#btn_kti03{ background:url(../images/btn/btn_kti.png) no-repeat; background-size:150px 50px; }
+#btn_kti04{ background:url(../images/btn/btn_kti.png) no-repeat; background-size:150px 50px; }
+#btn_kti05{ background:url(../images/btn/btn_kti.png) no-repeat; background-size:150px 50px; }
+#btn_nr	{ background:url(../images/btn/btn_nr.png) no-repeat; background-size:125px 31px; }
+#btn_wkt{ background:url(../images/btn/btn_wkt.png) no-repeat; background-size:125px 31px; }
+#btn_yr	{ background:url(../images/btn/btn_yr.png) no-repeat; background-size:125px 31px; }
+#btn_kti05 { background:url(../images/btn/btn_kti.png) no-repeat; background-size:150px 50px; top:250px; }
+#btn_restart { background:url(../images/btn/btn_restart.png) no-repeat; background-size:125px 31px; top:291px; }
+
+/* section
+--------------------------------------------------------- */
+#section01	{
+	opacity:1;
+	position:absolute;
+	z-index:100;
+}
+
+#section02	{
+	opacity:0;
+	position:absolute;
+	z-index:99;
+}
+
+#section03	{
+	opacity:0;
+	position:absolute;
+	z-index:98;
+}
+
+#section04	{
+	opacity:0;
+	position:absolute;
+	z-index:97;
+}
+
+#section05	{
+	opacity:0;
+	position:absolute;
+	z-index:96;
+}
+
+#section06	{
+	opacity:0;
+	position:absolute;
+	z-index:95;
+}
+
+#section07	{
+	opacity:0;
+	position:absolute;
+	z-index:94;
+}
+
+#section08	{
+	opacity:0;
+	position:absolute;
+	z-index:93;
+}
+
+#section09	{
+	opacity:0;
+	position:absolute;
+	z-index:92;
+}
+
+#section10	{
+	opacity:0;
+	position:absolute;
+	z-index:91;
+}
+
+#section11	{
+	opacity:0;
+	position:absolute;
+	z-index:90;
+}
+
+/* 顔選択
+--------------------------------------------------------- */
+#faceSelect	{
+	position:absolute;
+	text-align:center;
+	vertical-align:middle;
+	width:300px;
+	top:200px;
+	left:10px;
+}
+
+#facePa	{
+	
+}
+
+.f1, .f2, .f3, .f4, .f5, .f6, .f7, .f8	{
+	width:79px;
+	height:136px;
+	position:absolute;
+	top:57px;
+	left:40px;
+	opacity:0;
+}
+
+/* 衣装選択
+--------------------------------------------------------- */
+#costumeSelect	{
+}
+
+#c1, #c2, #c3, #c4	{
+	position:absolute;
+	top:200px;
+}
+
+#c1	{left:5px;}
+#c2	{left:82px;}
+#c3	{right:82px;}
+#c4	{right:5px;}
+
+.f1c1, .f1c2, .f1c3, .f1c4, .f2c1, .f2c2, .f2c3, .f2c4, .f3c1, .f3c2, .f3c3, .f3c4, .f4c1, .f4c2, .f4c3, .f4c4, .f5c1, .f5c2, .f5c3, .f5c4, .f6c1, .f6c2, .f6c3, .f6c4, .f7c1, .f7c2, .f7c3, .f7c4, .f8c1, .f8c2, .f8c3, .f8c4	{
+	width:79px;
+	height:136px;
+	position:absolute;
+	top:57px;
+	left:40px;
+	opacity:0;
+}
+
+/* レストラン選択
+--------------------------------------------------------- */
+#decorSelect	{
+}
+
+#d1, #d2, #d3, #d4	{
+	position:absolute;
+	top:200px;
+}
+
+#d1	{left:5px;}
+#d2	{left:82px;}
+#d3	{right:82px;}
+#d4	{right:5px;}
+
+.d1, .d2, .d3, .d4	{
+	width:240px;
+	height:150px;
+	position:absolute;
+	top:50px;
+	left:40px;
+	opacity:0;
+}
+
+/* 内装選択
+--------------------------------------------------------- */
+#interiorSelect	{
+}
+
+#i1, #i2, #i3, #i4	{
+	position:absolute;
+	top:200px;
+}
+
+#i1	{left:5px;}
+#i2	{left:82px;}
+#i3	{right:82px;}
+#i4	{right:5px;}
+
+.d1i1, .d1i2, .d1i3, .d1i4, .d2i1, .d2i2, .d2i3, .d2i4, .d3i1, .d3i2, .d3i3, .d3i4, .d4i1, .d4i2, .d4i3, .d4i4	{
+	width:240px;
+	height:150px;
+	position:absolute;
+	top:50px;
+	left:40px;
+	opacity:0;
+}
+
+/* レストラン確認
+--------------------------------------------------------- */
+#restaurant	{
+}
+
+.r1	{
+	width:240px;
+	height:150px;
+	position:absolute;
+	top:50px;
+	left:40px;
+}
+
+.r2, .r3, .r4	{
+	width:240px;
+	height:150px;
+	position:absolute;
+	top:50px;
+	left:40px;
+	opacity:0;
+}
+
+/* キラキラ
+--------------------------------------------------------- */
+#kirakira	{
+	position:absolute;
+	z-index:9999;
+}
+
+.kira1, .kira2, .kira3, .kira4, .kira5, .kira6	{
+	position:absolute;
+	opacity:0;
+}
+
+#kirakira .kira1	{top:40px;left:40px;}
+#kirakira .kira2	{top:150px;left:60px;}
+#kirakira .kira3	{top:60px;left:220px;}
+#kirakira .kira4	{top:150px;left:230px;}
+#kirakira .kira5	{top:80px;left:120px;}
+#kirakira .kira6	{top:140px;left:160px;}
+

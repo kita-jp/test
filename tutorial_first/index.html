@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+<meta name="format-detection" content="telephone=no" />
+<title>チュートリアル（前半）</title>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/tutorialFirst.css">
+<link rel="stylesheet" href="css/gss.css">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="js/easeljs-0.6.1.min.js"></script>
+<script type="text/javascript" src="js/tweenjs-0.4.1.min.js"></script>
+<script type="text/javascript" src="js/CSSPlugin.js"></script>
+<script type="text/javascript" src="js/tutorialFirst.js"></script>
+
+</head>
+
+<body>
+<div id="preloadedImages"></div>
+<div id="wrapper">
+	<div id="container">
+    	<div id="section01">
+        	<div id="bg01"></div>
+            <div id="btn_start"></div>
+        </div>
+        
+        <div id="section02">
+        	<div id="bg02"></div>
+            <div id="btn_hm"></div>
+        </div>
+        
+        <div id="section03">
+        	<div id="bg03"></div>
+            <div id="btn_nr"></div>
+        </div>
+        
+        <div id="section04">
+        	<div id="bg04"></div>
+            <div id="btn_hm2"></div>
+        </div>
+        
+        <div id="section05">
+        	<div id="bg05"></div>
+            <div id="btn_wkt"></div>
+        </div>
+        
+        <div id="section06">
+        	<div id="bg06"></div>
+            <div id="btn_yr"></div>
+        </div>
+        
+        <div id="section07">
+        	<div id="facePa">
+            	<img src="images/se07/main/face01.png" width="79" height="136" class="f1" />
+                <img src="images/se07/main/face02.png" width="79" height="136" class="f2" />
+                <img src="images/se07/main/face03.png" width="79" height="136" class="f3" />
+                <img src="images/se07/main/face04.png" width="79" height="136" class="f4" />
+                <img src="images/se07/main/face05.png" width="79" height="136" class="f5" />
+                <img src="images/se07/main/face06.png" width="79" height="136" class="f6" />
+                <img src="images/se07/main/face07.png" width="79" height="136" class="f7" />
+                <img src="images/se07/main/face08.png" width="79" height="136" class="f8" />
+            </div>
+            
+            
+        	<table id="faceSelect">
+            	<tr>
+                	<td><img src="images/se07/face/btn_face01_s.png" width="55" height="55" id="f1" /></td>
+                	<td><img src="images/se07/face/btn_face02.png" width="55" height="55" id="f2" /></td>
+                	<td><img src="images/se07/face/btn_face03.png" width="55" height="55" id="f3" /></td>
+                	<td><img src="images/se07/face/btn_face04.png" width="55" height="55" id="f4" /></td>
+                </tr>
+                <tr>
+                	<td><img src="images/se07/face/btn_face05.png" width="55" height="55" id="f5" /></td>
+                	<td><img src="images/se07/face/btn_face06.png" width="55" height="55" id="f6" /></td>
+                	<td><img src="images/se07/face/btn_face07.png" width="55" height="55" id="f7" /></td>
+                	<td><img src="images/se07/face/btn_face08.png" width="55" height="55" id="f8" /></td>
+                </tr>
+            </table>
+        	<div id="bg07"></div>
+            <div id="btn_kti01"></div>
+        </div>
+        
+        <div id="section08">
+        	<div id="costumePa">
+            	<img src="images/se08/main/f1c1.png" width="79" height="136" class="f1c1" />
+                <img src="images/se08/main/f1c2.png" width="79" height="136" class="f1c2" />
+                <img src="images/se08/main/f1c3.png" width="79" height="136" class="f1c3" />
+                <img src="images/se08/main/f1c4.png" width="79" height="136" class="f1c4" />
+                
+                <img src="images/se08/main/f2c1.png" width="79" height="136" class="f2c1" />
+                <img src="images/se08/main/f2c2.png" width="79" height="136" class="f2c2" />
+                <img src="images/se08/main/f2c3.png" width="79" height="136" class="f2c3" />
+                <img src="images/se08/main/f2c4.png" width="79" height="136" class="f2c4" />
+                
+                <img src="images/se08/main/f3c1.png" width="79" height="136" class="f3c1" />
+                <img src="images/se08/main/f3c2.png" width="79" height="136" class="f3c2" />
+                <img src="images/se08/main/f3c3.png" width="79" height="136" class="f3c3" />
+                <img src="images/se08/main/f3c4.png" width="79" height="136" class="f3c4" />
+                
+                <img src="images/se08/main/f4c1.png" width="79" height="136" class="f4c1" />
+                <img src="images/se08/main/f4c2.png" width="79" height="136" class="f4c2" />
+                <img src="images/se08/main/f4c3.png" width="79" height="136" class="f4c3" />
+                <img src="images/se08/main/f4c4.png" width="79" height="136" class="f4c4" />
+                
+                <img src="images/se08/main/f5c1.png" width="79" height="136" class="f5c1" />
+                <img src="images/se08/main/f5c2.png" width="79" height="136" class="f5c2" />
+                <img src="images/se08/main/f5c3.png" width="79" height="136" class="f5c3" />
+                <img src="images/se08/main/f5c4.png" width="79" height="136" class="f5c4" />
+                
+                <img src="images/se08/main/f6c1.png" width="79" height="136" class="f6c1" />
+                <img src="images/se08/main/f6c2.png" width="79" height="136" class="f6c2" />
+                <img src="images/se08/main/f6c3.png" width="79" height="136" class="f6c3" />
+                <img src="images/se08/main/f6c4.png" width="79" height="136" class="f6c4" />
+                
+                <img src="images/se08/main/f7c1.png" width="79" height="136" class="f7c1" />
+                <img src="images/se08/main/f7c2.png" width="79" height="136" class="f7c2" />
+                <img src="images/se08/main/f7c3.png" width="79" height="136" class="f7c3" />
+                <img src="images/se08/main/f7c4.png" width="79" height="136" class="f7c4" />
+                
+                <img src="images/se08/main/f8c1.png" width="79" height="136" class="f8c1" />
+                <img src="images/se08/main/f8c2.png" width="79" height="136" class="f8c2" />
+                <img src="images/se08/main/f8c3.png" width="79" height="136" class="f8c3" />
+                <img src="images/se08/main/f8c4.png" width="79" height="136" class="f8c4" />
+            </div>
+            
+        	<div id="costumeSelect">
+            	<img src="images/se08/costume/btn_cos01_s.png" width="80" height="120" id="c1" />
+                <img src="images/se08/costume/btn_cos02.png" width="80" height="120" id="c2" />
+                <img src="images/se08/costume/btn_cos03.png" width="80" height="120" id="c3" />
+                <img src="images/se08/costume/btn_cos04.png" width="80" height="120" id="c4" />
+            </div>
+            
+        	<div id="bg08"></div>
+            <div id="btn_kti02"></div>
+        </div>
+        
+        <div id="section09">
+        	<div id="decorPa">
+            	<img src="images/se09/main/d1.png" width="240" height="150" class="d1" />
+                <img src="images/se09/main/d2.png" width="240" height="150" class="d2" />
+                <img src="images/se09/main/d3.png" width="240" height="150" class="d3" />
+                <img src="images/se09/main/d4.png" width="240" height="150" class="d4" />
+            </div>
+        	
+        	<div id="decorSelect">
+            	<img src="images/se09/decor/btn_decor01_s.png" width="80" height="120" id="d1" />
+                <img src="images/se09/decor/btn_decor02.png" width="80" height="120" id="d2" />
+                <img src="images/se09/decor/btn_decor03.png" width="80" height="120" id="d3" />
+                <img src="images/se09/decor/btn_decor04.png" width="80" height="120" id="d4" />
+            </div>
+            
+        	<div id="bg09"></div>
+            <div id="btn_kti03"></div>
+        </div>
+    	
+        <div id="section10">
+        	<div id="interiorPa">
+            	<img src="images/se10/main/d1i1.png" width="240" height="150" class="d1i1" />
+                <img src="images/se10/main/d1i2.png" width="240" height="150" class="d1i2" />
+                <img src="images/se10/main/d1i3.png" width="240" height="150" class="d1i3" />
+                <img src="images/se10/main/d1i4.png" width="240" height="150" class="d1i4" />
+                
+                <img src="images/se10/main/d2i1.png" width="240" height="150" class="d2i1" />
+                <img src="images/se10/main/d2i2.png" width="240" height="150" class="d2i2" />
+                <img src="images/se10/main/d2i3.png" width="240" height="150" class="d2i3" />
+                <img src="images/se10/main/d2i4.png" width="240" height="150" class="d2i4" />
+                
+                <img src="images/se10/main/d3i1.png" width="240" height="150" class="d3i1" />
+                <img src="images/se10/main/d3i2.png" width="240" height="150" class="d3i2" />
+                <img src="images/se10/main/d3i3.png" width="240" height="150" class="d3i3" />
+                <img src="images/se10/main/d3i4.png" width="240" height="150" class="d3i4" />
+                
+                <img src="images/se10/main/d4i1.png" width="240" height="150" class="d4i1" />
+                <img src="images/se10/main/d4i2.png" width="240" height="150" class="d4i2" />
+                <img src="images/se10/main/d4i3.png" width="240" height="150" class="d4i3" />
+                <img src="images/se10/main/d4i4.png" width="240" height="150" class="d4i4" />
+            </div>
+        	
+        	<div id="interiorSelect">
+            	<img src="images/se10/interior/btn_int01_s.png" width="80" height="120" id="i1" />
+                <img src="images/se10/interior/btn_int02.png" width="80" height="120" id="i2" />
+                <img src="images/se10/interior/btn_int03.png" width="80" height="120" id="i3" />
+                <img src="images/se10/interior/btn_int04.png" width="80" height="120" id="i4" />
+            </div>
+            
+        	<div id="bg10"></div>
+            <div id="btn_kti04"></div>
+        </div>
+        
+        <div id="section11">
+        	<div id="restaurant">
+            </div>
+            
+        	<div id="bg11"></div>
+            <div id="btn_kti05"></div>
+            <div id="btn_restart"></div>
+        </div>
+        
+        <div id="kirakira">
+        	<img src="images/common/star.png" width="49" height="49" class="kira1" />
+            <img src="images/common/star.png" width="49" height="49" class="kira2" />
+            <img src="images/common/star.png" width="49" height="49" class="kira3" />
+            <img src="images/common/star.png" width="49" height="49" class="kira4" />
+            <img src="images/common/star.png" width="49" height="49" class="kira5" />
+            <img src="images/common/star.png" width="49" height="49" class="kira6" />
+        </div>
+        
+    </div>
+</div>
+</body>
+</html>
