@@ -1,0 +1,268 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*
+	最終更新日 13/04/30
+--------------------------------------------------------- */
+
+
+
+/* =========================================================
+　フォント
+========================================================= */
+
+/* フォントサイズ
+--------------------------------------------------------- */
+.fs_05 {font-size:0.5em;}
+.fs_06 {font-size:0.6em;}
+.fs_07 {font-size:0.7em;}
+.fs_08 {font-size:0.8em;}
+.fs_09 {font-size:0.9em;}
+.fs_11 {font-size:1.1em;}
+.fs_12 {font-size:1.2em;}
+.fs_13 {font-size:1.3em;}
+.fs_14 {font-size:1.4em;}
+.fs_15 {font-size:1.5em;}
+.fs_16 {font-size:1.6em;}
+.fs_17 {font-size:1.7em;}
+.fs_18 {font-size:1.8em;}
+.fs_19 {font-size:1.9em;}
+.fs_20 {font-size:2.0em;}
+.fs_25 {font-size:2.5em;}
+.fs_30 {font-size:3.0em;}
+.fs_33 {font-size:3.3em;}
+.fs_35 {font-size:3.5em;}
+
+/* 位置
+--------------------------------------------------------- */
+
+/* ----- text-align ----- */
+.ta_l {text-align:left;}
+.ta_r {text-align:right;}
+.ta_c {text-align:center;}
+.ta_j {text-align:justify;}
+
+/* ----- float ----- */
+.f_l {float:left;}
+.f_r {float:right;}
+
+/* 装飾
+--------------------------------------------------------- */
+.fw_b {font-weight:bold;}
+
+.td_n {text-decoration:none;}
+.td_u {text-decoration: underline;}
+
+.b_n {border:none;}
+
+
+
+/* ----- 行間 ----- */
+.lh_11 {line-height:1.1em;}
+.lh_12 {line-height:1.2em;}
+.lh_13 {line-height:1.3em;}
+.lh_14 {line-height:1.4em;}
+.lh_15 {line-height:1.5em;}
+.lh_16 {line-height:1.6em;}
+.lh_17 {line-height:1.7em;}
+.lh_18 {line-height:1.8em;}
+.lh_19 {line-height:1.9em;}
+.lh_20 {line-height:2.0em;}
+.lh_25 {line-height:2.5em;}
+.lh_30 {line-height:3.0em;}
+
+/* =========================================================
+　コンテンツ
+========================================================= */
+
+/* ----- position ----- */
+.p_r {position:relative;}
+.p_a {position:absolute;}
+.p_c {position:center;}
+
+/* ----- display ----- */
+.d_b {display:block;}
+.d_i {display:inline;}
+.d_ib {display:inline-block;}
+.d_li {display:list-item;}
+.d_tc {display:table-cell;}
+
+/* =========================================================
+　余白
+========================================================= */
+
+/* margin
+--------------------------------------------------------- */
+
+/* ----- 各方向 ----- */
+.mt05 {margin-top:5px;}
+.mt10 {margin-top:10px;}
+.mt15 {margin-top:15px;}
+.mt20 {margin-top:20px;}
+.mt25 {margin-top:25px;}
+.mt30 {margin-top:30px;}
+.mt35 {margin-top:35px;}
+.mt40 {margin-top:40px;}
+.mt45 {margin-top:45px;}
+.mt50 {margin-top:50px;}
+
+.mr05 {margin-right:5px;}
+.mr10 {margin-right:10px;}
+.mr15 {margin-right:15px;}
+.mr20 {margin-right:20px;}
+.mr25 {margin-right:25px;}
+.mr30 {margin-right:30px;}
+.mr35 {margin-right:35px;}
+.mr40 {margin-right:40px;}
+.mr45 {margin-right:45px;}
+.mr50 {margin-right:50px;}
+.mr80 {margin-right:80px;}
+
+.mb02 {margin-bottom:2px;}
+.mb05 {margin-bottom:5px;}
+.mb10 {margin-bottom:10px;}
+.mb15 {margin-bottom:15px;}
+.mb20 {margin-bottom:20px;}
+.mb25 {margin-bottom:25px;}
+.mb30 {margin-bottom:30px;}
+.mb35 {margin-bottom:35px;}
+.mb40 {margin-bottom:40px;}
+.mb45 {margin-bottom:45px;}
+.mb50 {margin-bottom:50px;}
+
+.ml05 {margin-left:5px;}
+.ml10 {margin-left:10px;}
+.ml15 {margin-left:15px;}
+.ml20 {margin-left:20px;}
+.ml25 {margin-left:25px;}
+.ml30 {margin-left:30px;}
+.ml35 {margin-left:35px;}
+.ml40 {margin-left:40px;}
+.ml45 {margin-left:45px;}
+.ml50 {margin-left:50px;}
+
+/* ----- 上下・左右 ----- */
+.mtb05 {margin-top:5px; margin-bottom:5px;}
+.mtb10 {margin-top:10px; margin-bottom:10px;}
+.mtb15 {margin-top:15px; margin-bottom:15px;}
+.mtb20 {margin-top:20px; margin-bottom:20px;}
+.mtb25 {margin-top:25px; margin-bottom:25px;}
+.mtb30 {margin-top:30px; margin-bottom:30px;}
+.mtb35 {margin-top:35px; margin-bottom:35px;}
+.mtb40 {margin-top:40px; margin-bottom:40px;}
+.mtb45 {margin-top:45px; margin-bottom:45px;}
+.mtb50 {margin-top:50px; margin-bottom:50px;}
+
+.mlr05 {margin-left:5px; margin-right:5px;}
+.mlr10 {margin-left:10px; margin-right:10px;}
+.mlr15 {margin-left:15px; margin-right:15px;}
+.mlr20 {margin-left:20px; margin-right:20px;}
+.mlr25 {margin-left:25px; margin-right:25px;}
+.mlr30 {margin-left:30px; margin-right:30px;}
+.mlr35 {margin-left:35px; margin-right:35px;}
+.mlr40 {margin-left:40px; margin-right:40px;}
+.mlr45 {margin-left:45px; margin-right:45px;}
+.mlr50 {margin-left:50px; margin-right:50px;}
+
+.ma	{margin:0 auto;}
+
+/* padding
+--------------------------------------------------------- */
+
+/* ----- 各方向 ----- */
+.pt05 {padding-top:5px;}
+.pt10 {padding-top:10px;}
+.pt15 {padding-top:15px;}
+.pt20 {padding-top:20px;}
+.pt25 {padding-top:25px;}
+.pt30 {padding-top:30px;}
+.pt35 {padding-top:35px;}
+.pt40 {padding-top:40px;}
+.pt45 {padding-top:45px;}
+.pt50 {padding-top:50px;}
+
+.pr05 {padding-right:5px;}
+.pr10 {padding-right:10px;}
+.pr15 {padding-right:15px;}
+.pr20 {padding-right:20px;}
+.pr25 {padding-right:25px;}
+.pr30 {padding-right:30px;}
+.pr35 {padding-right:35px;}
+.pr40 {padding-right:40px;}
+.pr45 {padding-right:45px;}
+.pr50 {padding-right:50px;}
+
+.pb05 {padding-bottom:5px;}
+.pb10 {padding-bottom:10px;}
+.pb15 {padding-bottom:15px;}
+.pb20 {padding-bottom:20px;}
+.pb25 {padding-bottom:25px;}
+.pb30 {padding-bottom:30px;}
+.pb35 {padding-bottom:35px;}
+.pb40 {padding-bottom:40px;}
+.pb45 {padding-bottom:45px;}
+.pb50 {padding-bottom:50px;}
+
+.pl05 {padding-left:5px;}
+.pl10 {padding-left:10px;}
+.pl15 {padding-left:15px;}
+.pl20 {padding-left:20px;}
+.pl25 {padding-left:25px;}
+.pl30 {padding-left:30px;}
+.pl35 {padding-left:35px;}
+.pl40 {padding-left:40px;}
+.pl45 {padding-left:45px;}
+.pl50 {padding-left:50px;}
+
+/* ----- 上下・左右 ----- */
+.ptb05 {padding-top:5px; padding-bottom:5px;}
+.ptb10 {padding-top:10px; padding-bottom:10px;}
+.ptb15 {padding-top:15px; padding-bottom:15px;}
+.ptb20 {padding-top:20px; padding-bottom:20px;}
+.ptb25 {padding-top:25px; padding-bottom:25px;}
+.ptb30 {padding-top:30px; padding-bottom:30px;}
+.ptb35 {padding-top:35px; padding-bottom:35px;}
+.ptb40 {padding-top:40px; padding-bottom:40px;}
+.ptb45 {padding-top:45px; padding-bottom:45px;}
+.ptb50 {padding-top:50px; padding-bottom:50px;}
+
+.plr05 {padding-left:5px; padding-right:5px;}
+.plr10 {padding-left:10px; padding-right:10px;}
+.plr15 {padding-left:15px; padding-right:15px;}
+.plr20 {padding-left:20px; padding-right:20px;}
+.plr25 {padding-left:25px; padding-right:25px;}
+.plr30 {padding-left:30px; padding-right:30px;}
+.plr35 {padding-left:35px; padding-right:35px;}
+.plr40 {padding-left:40px; padding-right:40px;}
+.plr45 {padding-left:45px; padding-right:45px;}
+.plr50 {padding-left:50px; padding-right:50px;}
+
+/* =========================================================
+ clear
+========================================================= */
+.clear {clear:both;}
+
+/* ----- clearfix ----- */
+.clearfix:after {content: ".";display: block;height: 0;font-size:0;clear: both;visibility:hidden;}
+.clearfix {display: inline-block;} 
+/* Hides from IE Mac */
+* html .clearfix {height: 1%;}
+.clearfix {display:block;}
+/* End Hack */ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

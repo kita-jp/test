@@ -1,0 +1,380 @@
+@charset "utf-8";
+
+/* =========================================================
+ 基本
+========================================================= */
+
+/* フォント
+--------------------------------------------------------- */
+@font-face {
+  font-family: 'AXIS-R-Joyo';
+  src: url('../font/AXIS-R-Joyo.otf') format('OpenType');
+}
+
+/*@font-face {
+  font-family: 'KozGoPro-Regular';
+  src: url('../font/KozGoPro-Regular.otf') format('OpenType');
+}*/
+
+/* 基本タグ
+--------------------------------------------------------- */
+html, body { height:100%; }
+
+body {
+	font-family: /*'AXIS-R-Joyo',*/ "Arial", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
+	background:url(../images/common/bg_grid.gif);
+	margin: 0;
+	padding: 0;
+	color: #2E3030;
+	font-size:0.75em;
+	line-height:1.4em;
+	letter-spacing:0.1em;
+}
+
+a img {
+	border: none;
+}
+
+a:link {
+	color:#2E3030;
+	text-decoration: none;
+}
+a:visited, a:active, a:focus {
+	color:#2E3030;
+	text-decoration: none;
+}
+a:hover { 
+	color: #FFF;
+	text-decoration: none;
+}
+
+/* 大枠
+--------------------------------------------------------- */
+#wrapper	{
+	text-align: left;
+	width: 100%;
+	height:100%;
+	min-height:100%;
+}
+
+/* サイドバー（タグ）
+--------------------------------------------------------- */
+#sidebar {
+	float: left;
+	width: 200px;
+	background:url(../images/common/bg_slash.gif);
+	border-right:1px solid #2E3030;
+	position:relative;
+}
+
+#sidebar .logo	{
+	background:url(../images/common/logo.jpg) no-repeat;
+	width:200px;
+	height:110px;
+}
+
+#sidebar .ct	{
+	border-top:4px solid #2E3030;
+	padding:5px;
+}
+
+#sidebar .ct_tit	{
+	background: url(../images/common/title/tit_category_tag.png) no-repeat;
+	width:84px;
+	height:26px;
+	margin:0 auto 10px;
+}
+
+#sidebar ul.ct_list	{
+}
+
+#sidebar ul.ct_list 	{
+	
+}
+
+#sidebar ul.ct_list li	{
+	
+}
+
+#sidebar ul.ct_list li a	{
+	display:block;
+	margin:2px 5px;
+	padding:2px 0 2px 5px;
+}
+
+#sidebar ul.ct_list li a:hover{
+	background:#B3B4B0;
+	color:#fff;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	box-shadow: inset 0px 1px 2px 0px #666;
+	-webkit-box-shadow: inset 0px 1px 2px 0px #666;
+	-moz-box-shadow: inset 0px 1px 2px 0px #666;
+}
+
+/* ----- info ----- */
+#sidebar .info	{
+	position:absolute;
+	bottom:0;
+	border-top:4px solid #2E3030;
+	padding:5px;
+}
+
+#sidebar .info .info_tit{
+	margin:0 auto 10px;
+	background:url(../images/common/title/tit_info.png) no-repeat;
+	width:190px;
+	height:26px;
+}
+
+#sidebar .info_list li	{
+	border-bottom:1px solid #B3B4B0;
+}
+
+/* コンテナー
+--------------------------------------------------------- */
+#container {
+	float: right;
+	width: 100%;
+	margin-left: -220px;
+}
+
+/* メインコンテンツ
+--------------------------------------------------------- */
+#content {
+	min-width:770px;
+	margin-left: 220px;
+	border-left:1px solid #2E3030;
+	background:url(../images/common/bg_slash.gif);
+	padding-bottom:20px;
+}
+
+	/* ----- ナビ ----- */
+	ul.nav {
+		list-style: none;
+		border-top: 1px solid #666;
+		margin-bottom: 15px;
+	}
+	ul.nav li {
+		border-bottom: 1px solid #666;
+	}
+	ul.nav a, ul.nav a:visited {
+		padding: 5px 5px 5px 15px;
+		display: block;
+		text-decoration: none;
+		background-color: #8090AB;
+		color: #000;
+	}
+	
+	ul.nav a:hover, ul.nav a:active, ul.nav a:focus { 
+		background-color: #6F7D94;
+		color: #FFF;
+	}
+
+/* ----- ヘッダー ----- */
+#header_info	{
+	width:100%;
+	padding: 7px 0;
+	background:#FFF;
+}
+
+#pankuzu	{
+	margin-left:7px;
+	float:left;
+}
+
+#count_num	{
+	margin-right:7px;
+	float:right;
+	text-align:right;
+}
+
+/* ----- 検索フォーム -----*/
+#s_form	{
+	border-top:4px solid #2E3030;
+	border-bottom:4px solid #2E3030;
+	line-height:0;
+	position:relative;
+	height:76px;
+	width:100%;
+}
+
+#s_form .all_search	{
+	background:url(../images/common/bg_slash.gif);
+	width:90%;
+	float:left;
+	border-bottom:1px solid #2E3030;
+	
+}
+
+#s_form .sf_list	{
+	float:right;
+	position:absolute;
+	top:0;
+	right:0;
+}
+
+#s_form .sf_list li	{
+	float:left;
+	border-left:1px solid #B3B4B0;
+}
+
+#s_form .sf_list:after	{
+	content: ".";display: block;height: 0;font-size:0;clear: both;visibility:hidden;
+}
+
+#s_form .sf_btn	{
+	background:url(../images/common/icon/icon_search_s_off.png) no-repeat;
+	background-size:41px 41px;
+	width:41px;
+	height:41px;
+	cursor: pointer;
+	border:none;
+}
+
+#s_form .sf_btn:hover	{
+	background:url(../images/common/icon/icon_search_s_on.png) no-repeat;
+}
+
+#s_form .c_select	{
+	float:left;
+	width:150px;
+	height:41px;
+	border-right:1px solid #2E3030;
+}
+
+#s_form .c_select select	{
+	float:left;
+	width:150px;
+	height:41px;
+}
+
+#s_form .sf_freeword	{
+	height:37px;
+}
+
+#s_form .sf_freeword input	{
+	width:70%;
+	height:37px;
+	border:none;
+	padding-left:5px;
+}
+
+/* ------ 擬似セレクトボックス ------ */
+div.selectbox {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    position: relative;
+}
+
+    div.selectbox a.select {
+        display: inline-block;
+        *display: inline;
+        zoom: 1;
+        width: 150px;
+        color: #262626;
+        text-decoration: none;
+        cursor: default;
+    }
+
+        div.selectbox a.select span {
+            padding: 10px 22px 10px 7px;
+            display: block;
+            height: 41px;
+            background: url(img/icon_select.gif) no-repeat right 0;
+            line-height: 22px;
+            cursor: default;
+        }
+        
+        div.selectbox a.select:hover span { background-position: right -21px }
+        div.selectbox a.select_focus span { background-position: right -42px !important }
+        
+        div.selectbox div.pulldown {
+            border: solid #bbb 1px;
+            width: 150px;
+            max-height: 300px;
+            position: absolute;
+            left: -1px;
+            top: 41px;
+            background: #fff;
+            overflow: auto;			
+			z-index:9999;
+        }
+        
+            div.selectbox div.pulldown a {
+                border-bottom: solid #bbb 1px;
+                padding: 12px 8px;
+                display: block;
+            }
+            div.selectbox div.pulldown a.last-child {
+                border: none;
+            }
+            div.selectbox div.pulldown a:hover,
+            div.selectbox div.pulldown a.selected {
+                color: #666;
+                background: #eee;
+                text-decoration: none;
+            }
+
+/* main
+--------------------------------------------------------- */
+#main	{
+	
+}
+
+#main .m_content	{
+	border-top:4px solid #2E3030;
+	margin-top:20px;
+}
+
+#main .m_content .tit_nComment, .tit_comment, .tit_details, .tit_response, .tit_rSearch, .tit_sResults, .tit_tagList	{
+	color:#fff;
+	width:120px;
+	height:40px;
+	text-align:center;
+}
+
+#main .m_content .tit_nComment	{ background:url(../images/common/title/tit_newComment.png) no-repeat; }
+#main .m_content .tit_comment	{ background:url(../images/common/title/tit_Comment.png) no-repeat; }
+#main .m_content .tit_details	{ background:url(../images/common/title/tit_details.png) no-repeat; }
+#main .m_content .tit_response	{ background:url(../images/common/title/tit_response.png) no-repeat; }
+#main .m_content .tit_rSearch	{ background:url(../images/common/title/tit_rSearch.png) no-repeat; }
+#main .m_content .tit_sResults	{ background:url(../images/common/title/tit_sResults.png) no-repeat; }
+#main .m_content .tit_tagList	{ background:url(../images/common/title/tit_tagList.png) no-repeat; }
+
+/* フッター
+--------------------------------------------------------- */
+#footer {
+  clear: both;
+  padding: 0.5em 0 1em;
+  border-top: 4px solid #2E3030;
+  width:100%;
+  min-width:990px;
+}
+
+/* ページTOPボタン
+--------------------------------------------------------- */
+/* page-top */
+#page-top {
+	position: fixed;
+	bottom: 10px;
+	right: 0px;
+}
+#page-top a {
+	background: #666;
+	text-decoration: none;
+	color: #fff;
+	width: 100px;
+	padding: 30px 0;
+	text-align: center;
+	display: block;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+#page-top a:hover {
+	text-decoration: none;
+	background: #999;
+}

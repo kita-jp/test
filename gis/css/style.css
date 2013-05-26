@@ -1,0 +1,149 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* =========================================================
+ 独自CSS
+========================================================= */
+
+/*　トップ
+--------------------------------------------------------- */
+
+/* ----- 最新書き込み ----- */
+#all_kakikomi	{
+	
+}
+
+#all_kakikomi .kakikomi	{
+	background:#fff;
+	margin:20px 0 0 20px;
+	width:230px;
+	height:230px;
+	position:relative;
+	float:left;
+	font-size:0.7em;
+	letter-spacing:0em;
+}
+
+.kakikomi .k_samune	{
+	position:absolute;
+	top:10px;
+	left:10px;
+}
+
+.kakikomi .k_tit	{
+	position:absolute;
+	top:128px;
+	left:10px;
+	width:180px;
+	line-height:1.4em;
+}
+
+.kakikomi .k_data	{
+	position:absolute;
+	top:162px;
+	left:0px;
+	width:230px;
+	border:none;
+	box-sizing:border-box;
+}
+
+.kakikomi .k_data td	{
+	padding: 3px 5px;
+}
+
+
+/* ----- 書き込み ----- */
+.k_form	{
+	background:#FFF;
+	margin:20px 20px 0;
+	padding:20px;
+	position:relative;
+}
+
+.k_form .k_form_innner	{
+	width:690px;
+}
+
+.k_form .k_item	{
+}
+
+.k_form .k_attach	{
+	position:absolute;
+	margin-top:5px;
+}
+
+.k_form .k_a_input	{
+	position:absolute;
+	border:1px solid #B3B4B0;
+	width:350px;
+	height:70px;
+	top:430px;
+}
+
+.k_form .k_btn	{
+	padding:4px 10px;
+	background:#B3B4B0;
+	color:#FFF;
+	height:20px;
+	width:120px;
+	text-align:center;
+	border-radius:5px;
+	line-height:1.4em;
+	font-size:1.2em;
+}
+
+.k_form input, .k_form select, .k_form textarea	{
+	margin-top:5px;
+	border:1px solid #B3B4B0;
+	box-sizing:border-box;
+	padding:4px;
+}
+
+.k_form .k_icon	{
+	position:absolute;
+	top:40px;
+	left:300px;
+}
+
+.k_form .k_icon div	{
+	float:left;
+	margin-left:10px;
+}
+
+.b_g_top { border-top:#B3B4B0 solid 1px; }
+.b_g_right { border-right:#B3B4B0 solid 1px; }
+.b_g_bottom { border-bottom:#B3B4B0 solid 1px; }
+.b_g_left { border-left:#B3B4B0 solid 1px; }
+
+/* ----- Lavel 3 ----- */
+
+/* 検索フォーム
+--------------------------------------------------------- */
+
+/* Level 2
+--------------------------------------------------------- */
+
+/* Level 2
+--------------------------------------------------------- */
+
+/* Level 2
+--------------------------------------------------------- */
+
+/* Level 2
+--------------------------------------------------------- */
+
+/* Level 2
+--------------------------------------------------------- */
+
+/* Level 2
+--------------------------------------------------------- */
+
+/* ----- Lavel 3 ----- */
+
+/* ----- Lavel 3 ----- */
+
+/* ----- Lavel 3 ----- */
+
+/* ----- Lavel 3 ----- */
+
+/* ----- Lavel 3 ----- */

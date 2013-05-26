@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>無題ドキュメント</title>
+<!-- ///////////////////////////////////////////////////////////
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+■□□□□■■■■■■□■■□■■□■□□□□■□■■■□□□■
+■□■■■■■■■■□■□■□□■□■□■■■■□■■■□■■■
+■□■□□■□□□■□□□■□■□□■□■□□■□■■■□□□■
+■□■■□■■■■■□■□■□■□□■□■■□■□■■■□■■■
+■□□□□■■■■■□■□■□■■□■□□□□■□□□■□□□■
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+//////////////////////////////////////////////////////////// -->
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/common.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/gss.css" rel="stylesheet" type="text/css">
+<!--[if lte IE 7]>
+<style>
+.content { margin-right: -1px; }
+ul.nav a { zoom: 1; }  /* zoom IE hasLayoutトリガー */
+</style>
+<![endif]-->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="js/rollover.js"></script>
+<script type="text/javascript" src="js/scroll.js"></script>
+<script type="text/javascript" src="js/general.js"></script>
+<script type="text/javascript">
+$(function(){
+	wrapperHeight = $("#container").height();
+	$("#sidebar").css("height",wrapperHeight);
+	
+	$(window).on("resize",function(){
+		wrapperHeight = $("#container").height();
+		$("#sidebar").css("height",wrapperHeight);
+	});
+	
+	/*$(window).on("scroll", function(e){
+		winHeight = $(window).height();
+		winScroll = $(window).scrollTop();
+		$("#sidebar").css("height",winHeight + winScroll);
+		
+		if(winScroll >1000){
+			e.preventDefault();
+			e.stopPropagation();
+		}
+	});*/
+});
+</script>
+</head>
+
+<body>
+<div id="wrapper">    
+    <div id="container">
+        <div id="content">
+        	<div id="header_info" class="clearfix">
+                <div id="pankuzu">Top</div>
+                <div id="count_num">総コメント数　100000　総レスポンス数　1000000</div>
+            </div>
+            
+            <div id="s_form">
+            	<div class="all_search"><img src="images/common/tit_search.png" width="200" height="34" /></div>
+                <div class="c_select">
+                	<div class="selectbox">
+                        <a href="" class="select"><span>カテゴリ</span></a>
+                        <div class="pulldown">
+                            <a href="">カテゴリ</a>
+                            <a href="">項目1</a>
+                            <a href="">項目2</a>
+                            <a href="">項目3</a>
+                            <a href="">項目4</a>
+                            <a href="">項目5</a>
+                        </div>
+                        <input type="hidden" id="selectbox" value="" />
+                    </div>
+                </div>
+                <div class="sf_freeword">
+                	<input type="text" name="" value="タグorフリーワード">
+                </div>
+                
+            	<ul class="sf_list">
+                	<li style="margin-top:35px;"><input type="button" value="" class="sf_btn" /></li>
+                	<li><img src="images/common/icon/icon_com_off.png" width="80" height="76" /></li>
+                    <li><img src="images/common/icon/icon_search_off.png" width="80" height="76" /></li>
+                    <li><img src="images/common/icon/icon_tag_off.png" width="80" height="76" /></li>
+                    <li><img src="images/common/icon/icon_help_off.png" width="80" height="76" /></li>
+                    <li><img src="images/common/icon/icon_mail_off.png" width="80" height="76" /></li>
+                </ul>
+            </div>
+                        
+            <div id="main"><!-- ここからは各ページ毎に異なる -->
+            	<div class="m_content"><!--コンテンツタイトル -->
+                	<div class="tit_nComment"></div>
+                </div>
+                
+                <div id="all_kakikomi" class="clearfix">
+                    <div class="kakikomi">
+                        <div class="k_samune"><img src="images/common/noimg.jpg" width="210" height="110" /></div>
+                        <div class="k_tit">タイトル タイトル タイトル タイトル タイトル タイトル タイトル</div>
+                        <table class="k_data">
+                        	<col width="60px">
+                        	<tr class="b_g_bottom">
+                            	<td class="b_g_right">DATE</td>
+                                <td>1111/11/11</td>
+                            </tr>
+                            <tr class="b_g_bottom">
+                            	<td class="b_g_right">NAME</td>
+                                <td>ニックネーム</td>
+                            </tr>
+                            <tr>
+                            	<td class="b_g_right">Category</td>
+                                <td>カテゴリ</td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                    <div class="kakikomi">
+                        <div class="k_samune"><img src="images/common/noimg.jpg" width="210" height="110" /></div>
+                        <div class="k_tit">タイトル タイトル タイトル タイトル タイトル タイトル タイトル</div>
+                    	<table class="k_data">
+                        	<col width="60px">
+                        	<tr class="b_g_bottom">
+                            	<td class="b_g_right">DATE</td>
+                                <td>1111/11/11</td>
+                            </tr>
+                            <tr class="b_g_bottom">
+                            	<td class="b_g_right">NAME</td>
+                                <td>ニックネーム</td>
+                            </tr>
+                            <tr>
+                            	<td class="b_g_right">Category</td>
+                                <td>カテゴリ</td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                    <div class="kakikomi">
+                        <div class="k_samune"><img src="images/common/noimg.jpg" width="210" height="110" /></div>
+                        <div class="k_tit">タイトル タイトル タイトル タイトル タイトル タイトル タイトル</div>
+                    	<table class="k_data">
+                        	<col width="60px">
+                        	<tr class="b_g_bottom">
+                            	<td class="b_g_right">DATE</td>
+                                <td>1111/11/11</td>
+                            </tr>
+                            <tr class="b_g_bottom">
+                            	<td class="b_g_right">NAME</td>
+                                <td>ニックネーム</td>
+                            </tr>
+                            <tr>
+                            	<td class="b_g_right">Category</td>
+                                <td>カテゴリ</td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                    <div class="kakikomi">
+                        <div class="k_samune"><img src="images/common/noimg.jpg" width="210" height="110" /></div>
+                        <div class="k_tit">タイトル タイトル タイトル タイトル タイトル タイトル タイトル</div>
+                    </div>
+                    
+                    <div class="kakikomi">
+                        <div class="k_samune"><img src="images/common/noimg.jpg" width="210" height="110" /></div>
+                        <div class="k_tit">タイトル タイトル タイトル タイトル タイトル タイトル タイトル</div>
+                    </div>
+                    
+                    <div class="kakikomi">
+                        <div class="k_samune"><img src="images/common/noimg.jpg" width="210" height="110" /></div>
+                        <div class="k_tit">タイトル タイトル タイトル タイトル タイトル タイトル タイトル</div>
+                    </div>
+                    
+                    <!--<div class="kakikomi">
+                        <div class="k_samune"><img src="images/common/noimg.jpg" width="180" height="100" /></div>
+                        <div class="k_tit">タイトル タイトル タイトル タイトル タイトル タイトル タイトル</div>
+                    </div>
+                    
+                    <div class="kakikomi">
+                        <div class="k_samune"><img src="images/common/noimg.jpg" width="180" height="100" /></div>
+                        <div class="k_tit">タイトル タイトル タイトル タイトル タイトル タイトル タイトル</div>
+                    </div>
+                    
+                    <div class="kakikomi">
+                        <div class="k_samune"><img src="images/common/noimg.jpg" width="180" height="100" /></div>
+                        <div class="k_tit">タイトル タイトル タイトル タイトル タイトル タイトル タイトル</div>
+                    </div>
+                    
+                    <div class="kakikomi">
+                        <div class="k_samune"><img src="images/common/noimg.jpg" width="180" height="100" /></div>
+                        <div class="k_tit">タイトル タイトル タイトル タイトル タイトル タイトル タイトル</div>
+                    </div>
+                    
+                    <div class="kakikomi">
+                        <div class="k_samune"><img src="images/common/noimg.jpg" width="180" height="100" /></div>
+                        <div class="k_tit">タイトル タイトル タイトル タイトル タイトル タイトル タイトル</div>
+                    </div>
+                    
+                    <div class="kakikomi">
+                        <div class="k_samune"><img src="images/common/noimg.jpg" width="180" height="100" /></div>
+                        <div class="k_tit">タイトル タイトル タイトル タイトル タイトル タイトル タイトル</div>
+                    </div>-->                    
+                </div>
+                
+                <div class="m_content"><!--コンテンツタイトル-->
+                	<div class="tit_comment"></div>
+                </div>
+                
+                <div class="k_form">
+                	<div class="k_form_innner">
+                        <div class="k_item">ニックネーム：</div>
+                        <input type="text" name="" value="" style="width:250px;">
+                        
+                        <div class="k_icon clearfix">
+                        	<div class="k_btn">登録済みの画像</div>
+                        	<div class="k_btn"><input type="file" value="オリジナルの画像" name="オリジナルの画像"></div>
+                        	<div>画像表示</div>
+                        </div>
+                        
+                        <div class="k_item mt10">カテゴリ：</div>
+                        <select name="" value=""  style="width:250px;">
+                            <option value="" label="カテゴリ" selected>カテゴリ</option>
+                            <option value="web" label="WEB">WEB</option>
+                            <option value="web" label="WEB">WEB</option>
+                            <option value="web" label="WEB">WEB</option>
+                        </select>
+                        
+                        <div class="k_item mt10">タグ：</div>
+                        <input type="text" name="" value="" style="width:690px;">
+                        
+                        <textarea name="" style="width:690px;" rows="15"></textarea>
+                        
+                        <div class="k_attach">+ファイル添付</div>
+                        <div class="k_a_input">
+                        	<input type="file">
+                        </div>
+                        
+                        <div class="clearfix">
+                            <div class="ta_r">編集・削除キー（任意）<input type="text" size=5>※4桁の数字</div>
+                            
+                            <div class="ta_r"><form>
+                                <span class="">通知</span>
+                                <span class="">する</span><input type="radio" name="push" value="">
+                                <span class="">しない</span><input type="radio" name="push" value="" checked>
+                            </form></div>
+                            
+                            <div class="k_btn f_r mt10">書き込む</div>
+                        </div>
+                	</div>
+                </div>
+            </div>
+        <!-- end #content --></div>
+    <!-- end #container --></div>
+    
+     <div id="sidebar">
+        <div class="logo"></div>
+        <div class="ct">
+            <div class="ct_tit"></div>
+            <ul class="ct_list">
+                <li>
+                	<a href="#">カテゴリ</a>
+                    <ul>
+                    	<li><a href="#">カテゴリ</a></li>
+                        <li><a href="#">カテゴリ</a></li>
+                        <li><a href="#">カテゴリ</a></li>
+                        <li><a href="#">カテゴリ</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">カテゴリ</a></li>
+                <li><a href="#">カテゴリ</a></li>
+                <li><a href="#">カテゴリ</a></li>
+                <li><a href="#">カテゴリ</a></li>
+                <li><a href="#">カテゴリ</a></li>
+                <li><a href="#">カテゴリ</a></li>
+                <li><a href="#">カテゴリ</a></li>
+            </ul>
+        </div>
+    <!-- end #sidebar --></div>
+    
+    <div id="footer">
+    	<div>aa<br>aaaa</div>
+    </div><!-- / footer end -->
+    
+    <!-- ページTOP --><p id="page-top"><a href="#wrapper">PAGE TOP</a></p>
+<!-- end #wrapper --></div>
+</body>
+</html>
